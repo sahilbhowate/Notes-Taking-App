@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+
+    <!-- below lines copied from bootstrap website's Docs tab -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- The below code for navigation bar was copied from the bootstrap website's ---Components tab--- Navbar tab -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Magic Notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" id="searchTxt" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- The above code for navigation bar was copied from the bootstrap website's ---Components tab--- Navbar tab -->
+
+    <!-- In below code my-3 ka matlab hota hai ; y main margin dedo three ki--- matlab uppar wali horizontal axis se 3 units space. my-3 is a design class belonging to bootstrap -->
+    <!-- these below 2 lines were written by us -->
+    <div class="container my-3">
+        <h1>Welcome to Magic Notes</h1>
+        <div class="card">
+
+
+            <div class="card-body">
+
+                <div class="mb-3">
+                    <h5 class="card-title">Add a title</h5>
+                    <input type="text" class="form-control" id="addTitle" placeholder="Enter Title">
+                </div>
+
+                <h5 class="card-title">Add a note</h5>
+                <div class="mb-3">
+                    <!-- below is the line of code for adding text area -->
+                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary" id="addBtn">Add Note</button>
+            </div>
+
+            <hr>
+            <h1>Your Notes</h1>
+            <hr>
+
+            <!-- Because of the row design class , all the notes will come in a row -->
+            <div id="notes" class="row container-fluid">
+
+                <!-- This space is filled using javascript function called showNotes() -->
+
+            </div>
+            <!-- below lines copied from bootstrap website's Docs tab -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+                crossorigin="anonymous"></script>
+
+            <!-- below lines copied from bootstrap website's Docs tab -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+                integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+                crossorigin="anonymous"></script>
+
+            <!-- below lines copied from bootstrap website's Docs tab -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+                integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+                crossorigin="anonymous"></script>
+
+
+            <!--Below given app.js file is the one that we are developing -->
+            <script src="js/app.js"></script>
+        </div>
+</body>
+
+</html>
